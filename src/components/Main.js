@@ -66,7 +66,6 @@ class GalleryByReact extends React.Component {
           isCenter: false
         }
       });
-
       for (let i = 0, len = imgArrangeArr.length, k = len / 2; i < len; i++) {
         let hPosRangeLORX = null;
         if (i < k) {
@@ -85,7 +84,7 @@ class GalleryByReact extends React.Component {
         }
       }
 
-      if (imgRangeTopArr && imgArrangeArr[0]) {
+      if (imgRangeTopArr && imgRangeTopArr[0]) {
         imgArrangeArr.splice(topImgSpliceindex, 0, imgRangeTopArr[0])
       }
 
