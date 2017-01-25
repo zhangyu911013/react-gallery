@@ -50,7 +50,7 @@ class GalleryByReact extends React.Component {
         imgArrangeCenterArr = imgArrangeArr.splice(centerIndex, 1);
 
       let topImgNum = Math.floor(Math.random() * 2),//一个或零个
-        topImgSpliceindex = Math.ceil(Math.random() * (imgArrangeArr.length - topImgNum)),
+        topImgSpliceindex = Math.floor(Math.random() * (imgArrangeArr.length - topImgNum)),
         imgRangeTopArr = imgArrangeArr.splice(topImgSpliceindex, topImgNum);
 
       imgArrangeCenterArr[0] = {pos: centerPos, rotate: 0, isInverse: false, isCenter: true};
